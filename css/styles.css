@@ -613,6 +613,10 @@ padding: 24px 0px;
   margin-bottom: 9px;
   transition: color 250ms var(--cubic); 
 }
+.footer-list:hover .footer-address,
+.footer-list:focus .footer-address {
+  color: var(--accent-color);
+}
 .footer-social {
   width: 206px;
 }
