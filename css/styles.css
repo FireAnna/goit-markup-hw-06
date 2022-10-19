@@ -311,7 +311,7 @@ padding: 24px 0px;
   color: var(--title-color);
   border-radius: 4px;
   border-color: transparent;
-  transition: color 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic);
   
 }
 
@@ -552,7 +552,8 @@ padding: 24px 0px;
   height: 100%;
   border: 1px solid var(--team-social-icon);
   border-radius: 4px;
-  transition: border 250ms var(--portfolio-border)
+  transition: border 250ms var(--cubic);
+  transition: color 250ms var(--cubic);
 }
 
 .client-icon {
@@ -741,10 +742,16 @@ top: 0;
   transition-property: opacity;
   text-decoration: 250ms;
   transition-timing-function: var(--cubic);
+  overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
 }
 .backdrop.is-hidden{
   opacity: 0;
   pointer-events: none;
+  overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
 }
 .modal {
  padding: 40px;
